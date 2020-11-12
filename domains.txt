@@ -1,3 +1,5 @@
 www.google.com
 www.twitter.com
 www.bits-pilani.ac.in
+www.linkedin.com
+www.youtube.com

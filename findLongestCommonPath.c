@@ -48,7 +48,6 @@ int main(){
     while(a!=0 && a!=EOF && (!feof(fptr))){
         fscanf(fptr,"%s",domain_names[total_domains++]);
     }
-    total_domains--;
     //for(int i=0;i<total_domains;i++) printf("%s\n",domain_names[i]);
     printf("Total domains: %d\n",total_domains);
 
@@ -73,8 +72,8 @@ int main(){
 
     //while(finished_num<total_domains-1);
     sleep(2);
-    printf("Calculating common path...\n");
-    sleep(3);
+    printf("Calculating common path...few seconds...\n");
+    sleep(5);
     // for(int i=0;i<total_domains;i++){
     //     for(int j=0;j<MAX_HOPS;j++){
     //         printf("%s ",(char*)(domain_hop_ip+MAX_HOPS*STRING_LEN_IP*i+STRING_LEN_IP*j));
