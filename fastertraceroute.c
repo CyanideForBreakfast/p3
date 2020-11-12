@@ -101,7 +101,10 @@ void closeprog(int sig){
 
 void* icmpthread(){
     int icmpfd = socket(AF_INET,SOCK_RAW,IPPROTO_ICMP);
-    if(icmpfd==-1) {printf("icmp socket opening error.\n");exit(1);}
+    if(icmpfd==-1) {
+        printf("ICMP raw socket opening error.\nTry with priveledged user.\n");
+        exit(1);
+    }
     //recvfrom()
     struct msghdr msg;
     struct sockaddr src_addr;
